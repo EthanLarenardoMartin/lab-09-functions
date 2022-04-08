@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial v01</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            var total = 1;
+            for (var i = 0; i < n; i++) {
+                total = total * (n - i);
+                console.log("Current i is: " + i);
+                console.log("The current value of total is: " + total);
+                //first time total = 1
+                // increment each time total up to n
+            }
+            return total;
+            // return the FINAL value of total at the end
+        }
+
+        var userstring = prompt("Number please:")
+        var usernum = parseInt(userstring, 10);
+        
+        console.log(usernum + "! is " + factorial(usernum));
+
+    </script>
+</body>
+</html>
